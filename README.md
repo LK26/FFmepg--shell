@@ -1,5 +1,11 @@
 # FFmepg--down
 ```
+这里是对FFmepg进行下载shell文件源代码
+```
+```
+当然您也可以去忘光进行下载,解压就可以使用了.
+```
+```
 #!/bin/bash
 #库名称
 source="ffmpeg-3.4"
@@ -23,7 +29,10 @@ curl https://ffmpeg.org/releases/${source}.tar.bz2 | tar xj || exit 1
 fi
 
 ```
-#FFmpeg-build
+# FFmpeg-build
+```
+这是对FFmpeg库进行编译
+```
 ```
 #!/bin/bash
 #1.首先:定义下载的库名称
@@ -169,3 +178,60 @@ make -j3 install $EXPORT || exit 1
 cd $currentdir
 done
 ```
+# 执行sh文件后
+* 如果您在编译过程中遇到了如下问题
+```
+GNU assembler not found, install/update gas-preprocessor
+```
+
+![](/Users/daichichinpou/Desktop/GNU assembler not found  install update gas preprocessor.png)
+```
+如果这一步出错,因为没有把pl文件放在同一目录下,才导致的错误.
+所以您可以最新下载的pl文件,放在同一目录下进行编译.
+```
+这里有两种解决办法,当然如果您也有更好的办法,也可以使用的.
+一.
+```
+1. 下载最新的gas-preprocessor.pl
+2.右键点Finder->前往文件夹，输入/usr，
+在里面新建local文件夹，进入local文件夹中![C compiler test failed.png]
+(http://upload-images.jianshu.io/upload_images/2960658-41ad8a2bf4758ada.png?
+imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+再新建bin文件夹，
+拷贝下载的gas-preprocessor.pl到该目录下；
+3. 打开终端，输入 chmod 777 /usr/local/bin/gas-preprocessor.pl
+```
+二.
+```
+1.下载gas－preprocessor安装包
+2.复制gas-preprocessor.pl到/usr/sbin下
+3.chmod 777 /usr/local/bin/gas-preprocessor.pl
+```
+* C compiler test failed
+
+![](/Users/daichichinpou/Desktop/C compiler test failed.png)
+
+解决方法:
+```
+1.打开终端。
+输入并回车
+cd /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.
+platform/developer/SDKs/
+然后输入
+ls
+可以查看到你当前iOS SDK的版本
+2.修改iOS SDK版本。
+3.再次执行脚本
+```
+
+附上我的博客地址:http://www.jianshu.com/p/6e7e494b7c85
+有什么问题到我博客?互相交流.
+
+
+
+
+
+
+
+
+
