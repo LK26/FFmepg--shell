@@ -189,8 +189,8 @@ GNU assembler not found, install/update gas-preprocessor
 所以您可以最新下载的pl文件,放在同一目录下进行编译.
 ```
 这里有两种解决办法,当然如果您也有更好的办法,也可以使用的.
-一.
 ```
+第一种:
 1. 下载最新的gas-preprocessor.pl
 2.右键点Finder->前往文件夹，输入/usr，
 在里面新建local文件夹，进入local文件夹中![C compiler test failed.png]
@@ -200,8 +200,8 @@ imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 拷贝下载的gas-preprocessor.pl到该目录下；
 3. 打开终端，输入 chmod 777 /usr/local/bin/gas-preprocessor.pl
 ```
-二.
 ```
+第二种:
 1.下载gas－preprocessor安装包
 2.复制gas-preprocessor.pl到/usr/sbin下
 3.chmod 777 /usr/local/bin/gas-preprocessor.pl
