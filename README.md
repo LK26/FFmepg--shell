@@ -179,7 +179,7 @@ cd $currentdir
 done
 ```
 # 执行sh文件后
-* 如果您在编译过程中遇到了如下问题
+如果您在编译过程中遇到了如下问题
 ```
 GNU assembler not found, install/update gas-preprocessor
 ```
@@ -206,8 +206,9 @@ imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 2.复制gas-preprocessor.pl到/usr/sbin下
 3.chmod 777 /usr/local/bin/gas-preprocessor.pl
 ```
-* C compiler test failed
-
+```
+C compiler test failed
+```
 解决方法:
 ```
 1.打开终端。
@@ -222,7 +223,8 @@ ls
 ```
 
 附上我的博客地址:http://www.jianshu.com/p/6e7e494b7c85
-有什么问题到我博客?互相交流.
+有什么问题可以到简书联系我?
+咱们互相交流.
 
 
 
