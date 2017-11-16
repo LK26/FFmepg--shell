@@ -31,7 +31,7 @@ fi
 ```
 # FFmpeg-build
 ```
-这是对FFmpeg库进行编译
+这是对FFmpeg库进行编译源码
 ```
 ```
 #!/bin/bash
@@ -184,7 +184,6 @@ done
 GNU assembler not found, install/update gas-preprocessor
 ```
 
-![](/Users/daichichinpou/Desktop/GNU assembler not found  install update gas preprocessor.png)
 ```
 如果这一步出错,因为没有把pl文件放在同一目录下,才导致的错误.
 所以您可以最新下载的pl文件,放在同一目录下进行编译.
@@ -208,8 +207,6 @@ imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 3.chmod 777 /usr/local/bin/gas-preprocessor.pl
 ```
 * C compiler test failed
-
-![](/Users/daichichinpou/Desktop/C compiler test failed.png)
 
 解决方法:
 ```
