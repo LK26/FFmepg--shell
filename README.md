@@ -1,6 +1,6 @@
 # FFmepg--down
 ```
-这里是对FFmepg进行下载shell文件源代码
+FFmepg下载shell文件源代码
 ```
 ```
 当然您也可以去忘光进行下载,解压就可以使用了.
@@ -31,7 +31,7 @@ fi
 ```
 # FFmpeg-build
 ```
-这是对FFmpeg库进行编译源码
+FFmpeg静态库编译源代码
 ```
 ```
 #!/bin/bash
@@ -180,9 +180,7 @@ done
 ```
 # 执行sh文件后
 如果您在编译过程中遇到了如下问题
-```
-GNU assembler not found, install/update gas-preprocessor
-```
+* GNU assembler not found, install/update gas-preprocessor
 
 ```
 如果这一步出错,因为没有把pl文件放在同一目录下,才导致的错误.
@@ -206,9 +204,9 @@ imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 2.复制gas-preprocessor.pl到/usr/sbin下
 3.chmod 777 /usr/local/bin/gas-preprocessor.pl
 ```
-```
-C compiler test failed
-```
+
+* C compiler test failed
+
 解决方法:
 ```
 1.打开终端。
