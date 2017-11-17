@@ -1,13 +1,12 @@
-####1.FFmepg编译环境及结构
+#### 1.FFmepg编译环境及结构
 * 下载FFmepg
 * FFmpeg配置选项介绍
 * 下载gas-preprocessor.pl及安装
 * 编写脚本代码(执行源码)
 * 执行脚本结果一览
 * 编译中出现的问题
-* 个人总结
 
-####2.下载FFmepg
+#### 2.下载FFmepg
 首先呢,我们先下载音视频框架
 这里提供两种下载方法:
 * 一:官网下载(https://ffmpeg.org)
@@ -179,7 +178,7 @@
 * --enable-libass  启用libass字幕渲染,需要字幕和ass过滤[默认关闭]
 
 ![externalLibrary Support_2.png](http://upload-images.jianshu.io/upload_images/2960658-deebba5aaaabfed7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-* 
+*
 * --enable-libbluray  启用蓝光,使用libbluray [默认关闭]
 * --enable-libbs2b   启用bs2b DSP库[默认关闭]
 * --enable-libcaca 启用文本显示,使用libcaca[默认关闭]
@@ -360,7 +359,7 @@
 * --disable-fma4 禁止FMA4优化
 * --disable-avx2 禁止AVX2优化
 * --disable-aesni 禁止AESNI优化
-* --disable-armv5te 禁止armv5te 优化 
+* --disable-armv5te 禁止armv5te 优化
 * --disable-armv6 禁止armv6优化
 * --disable-armv6t2 禁止armv6t2优化
 * --disable-vfp 禁止VFP优化
@@ -387,7 +386,7 @@
 * --enable-ftrapv 算术溢出
 * --samples=PATH  测试样品路径,如果在调用是时间没有设置$FATE_SAMPLES
 * --enable-neon-clobber-test  检查NEON寄存器(仅用于调试目的)
-* --enable-xmm-clobber-test  检查XMM寄存器(仅仅Win64,仅用于调试目的) 
+* --enable-xmm-clobber-test  检查XMM寄存器(仅仅Win64,仅用于调试目的)
 * --enable-random  任意地启用组件
 * --disable-random 任意地禁用组件
 * --enable-random=LIST 随机启用特定组件或组件组,列表是一个以逗号分隔的名称[:PROB],PROB与组件名相关,默认值是0.5
@@ -405,13 +404,13 @@
 这里选项大家根据自己需要各取所需,加入到自己编译shell中.
 
 
-####4.下载gas-preprocessor.pl及安装
+#### 4.下载gas-preprocessor.pl及安装
 
 * 下载
 同样有两种办法:
 
 ```
-一: github地址：https://github.com/libav/gas-preprocessor 
+一: github地址：https://github.com/libav/gas-preprocessor
 ```
 ```
 二: 到我的github下载:请查看文章底部
@@ -441,7 +440,7 @@ imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 3.chmod 777 /usr/local/bin/gas-preprocessor.pl
 ```
 
-####5.编写脚本代码
+#### 5.编写脚本代码
 * 定义下载库名称
 ```
 source="ffmpeg-3.4"
@@ -473,7 +472,7 @@ Documentation options:文档选项
 --disable-doc:不需要编译文档
 ```
 ```
-configure_flags="--enable-cross-compile --disable-debug --disable-programs 
+configure_flags="--enable-cross-compile --disable-debug --disable-programs
 --disable-doc --enable-pic"
 ```
 * 定义默认CPU平台架构类型
@@ -499,9 +498,9 @@ then
 archs="$*"
 fi
 ```
-* 安装汇编器->yasm 
+* 安装汇编器->yasm
 ```
-下载yasm最新版本：http://www.tortall.net/projects/yasm/releases/ 
+下载yasm最新版本：http://www.tortall.net/projects/yasm/releases/
 ```
 ```
 首先判断是否存在汇编器,然后通过软件管理器,下载安装汇编器
@@ -517,7 +516,7 @@ https://raw.githubusercontent.com/Homebrew/install/master/install)" || exit 1
 fi
 echo "安装yasm"
 brew install yasm || exit 1
-fi 
+fi
 ```
 * for循环编译FFmpeg静态库
 ```
@@ -549,7 +548,7 @@ fembed-bitcode"
 if [ "$arch" = "arm64" ]
 then
 #程序运行时,变量访问越界问题
-EXPORT="GASPP_FIX_XCODE5=1"  
+EXPORT="GASPP_FIX_XCODE5=1"
 fi
 fi
 ```
@@ -608,12 +607,12 @@ cd $currentdir
 done
 ```
 
-####6.执行脚本结果一览
+#### 6.执行脚本结果一览
 * 执行成功后,这里需要等待一小会时间,此时,你可以放首音乐听听,等待一下
 我们可以在文件夹中看到
 ![执行结果_1.png](http://upload-images.jianshu.io/upload_images/2960658-cbba6cd6851afc78.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)![执行结果_2.png](http://upload-images.jianshu.io/upload_images/2960658-ff3311daa95b0696.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-####7.编译过程中遇到的问题
+#### 7.编译过程中遇到的问题
 
 * GNU assembler not found, install/update gas-preprocessor
 
@@ -635,39 +634,17 @@ done
 输入并回车
 cd /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.
 platform/developer/SDKs/
-然后输入 
-ls 
+然后输入
+ls
 可以查看到你当前iOS SDK的版本
 2.修改iOS SDK版本。
 3.再次执行脚本
 ```
-####8.个人总结
-好了,到这里呢?
 
-您就完成了FFmepg--静态库的编译,
-
-当您完成这些操作,还是蛮有成就的,
-
-编译自己想要的静态库,需要花费时间,需要静心等待,
-
-编译出错就需要您想办法解决,
-
-个人觉得写编译脚本不是一件困难的事,关键是遇到了编译出错的问题,你是否可以自己解决.
-
-考验了一下个人能力时候到了,如果您觉得对您有帮助,请🌹和👍支持一波.
-
-以上遇到的2种编译问题呢?是个人遇到的,如果您也遇到了其他的问题呢,自己解决了,也可以发给我,我把这个问题和解决办法加上去,希望帮组更多的小伙伴.
-
-如果有什么问题咱么可以交流一下,借用名人的一句话,"有问题就说,不要憋出内伤".😆😁
-
-如果需要FFmepg--shell的编译及下载源代码,请到我的github下载:
-https://github.com/LK26/FFmepg--shell
-
-如果需要转载,请注明原著地址,谢谢!!
 # 联系我
-附上我的博客地址:http://www.jianshu.com/p/6e7e494b7c85
+附上我的简书地址:http://www.jianshu.com/p/6e7e494b7c85
 有什么问题可以到简书联系我?
-咱们互相交流.
+咱们互相交流一下.
 
 
 
