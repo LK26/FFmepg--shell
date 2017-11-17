@@ -610,9 +610,21 @@ done
 #### 6.执行脚本结果一览
 * 执行成功后,这里需要等待一小会时间,此时,你可以放首音乐听听,等待一下
 我们可以在文件夹中看到
-![执行结果_1.png](http://upload-images.jianshu.io/upload_images/2960658-cbba6cd6851afc78.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)![执行结果_2.png](http://upload-images.jianshu.io/upload_images/2960658-ff3311daa95b0696.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![运行结果1.jpg](http://upload-images.jianshu.io/upload_images/2960658-d30a4cb6f7e93832.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+![运行结果2.jpg](http://upload-images.jianshu.io/upload_images/2960658-e7eb0894e3166c20.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![运行结果_3.png](http://upload-images.jianshu.io/upload_images/2960658-cbba6cd6851afc78.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)![运行结果_4.png](http://upload-images.jianshu.io/upload_images/2960658-ff3311daa95b0696.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 #### 7.编译过程中遇到的问题
+* 语法错误
+`特别注意:`虽然把代码写完了,进行编译的时候老是出错,你又很难检查出错误.注意下图语法变动,正确的使用,确保你的编译通过,否则反反复复修改,还是找不到问题的关键.
+
+
+![语法错误1.jpg](http://upload-images.jianshu.io/upload_images/2960658-030d4c0d6339869b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![语法错误2.jpg](http://upload-images.jianshu.io/upload_images/2960658-6d2ee8108f5140e6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 * GNU assembler not found, install/update gas-preprocessor
 
