@@ -20,7 +20,7 @@
 * 执行结果:在终端执行文件ffmpeg-down文件,就可以进行下载FFmpeg,下图正在下载...
 
 ![ffmpeg_down_结果.png](http://upload-images.jianshu.io/upload_images/2960658-86d7c31e8f055b77.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-####3.查看FFmpeg配置选项介绍
+#### 3.查看FFmpeg配置选项介绍
 首先呢,我们进入下载好的FFmpeg框架包中,打开终端,cd到目录下,执行如下命令,就可以配置选项的组成
 ```
 ./configure --help
