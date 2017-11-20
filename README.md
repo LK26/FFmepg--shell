@@ -5,6 +5,7 @@
 * 编写脚本代码(执行源码)
 * 执行脚本结果一览
 * 编译中出现的问题
+* 联系我
 
 #### 2.下载FFmepg
 首先呢,我们先下载音视频框架
@@ -20,6 +21,7 @@
 * 执行结果:在终端执行文件ffmpeg-down文件,就可以进行下载FFmpeg,下图正在下载...
 
 ![ffmpeg_down_结果.png](http://upload-images.jianshu.io/upload_images/2960658-86d7c31e8f055b77.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+注意：把下载后的解压包放在与shell脚本同一目录下
 #### 3.查看FFmpeg配置选项介绍
 首先呢,我们进入下载好的FFmpeg框架包中,打开终端,cd到目录下,执行如下命令,就可以配置选项的组成
 ```
@@ -618,6 +620,21 @@ done
 ![运行结果_3.png](http://upload-images.jianshu.io/upload_images/2960658-cbba6cd6851afc78.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)![运行结果_4.png](http://upload-images.jianshu.io/upload_images/2960658-ff3311daa95b0696.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 #### 7.编译过程中遇到的问题
+* 执行文件报警告
+![执行shell提示.png](http://upload-images.jianshu.io/upload_images/2960658-089160230e43f2b8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+这里需要您给脚本授权
+```
+一.
+chmod +x 脚本名
+二.
+chmod 777 脚本名
+```
+* 把我的源码下载后,编译时出错了
+![编译报错.png](http://upload-images.jianshu.io/upload_images/2960658-f4f34b46d1c5209a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+* 没有这样的文件和路径
+![此时文件夹内容.png](http://upload-images.jianshu.io/upload_images/2960658-209437824d1ef6fa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+*  你没有把下载的MMpage压缩包放在该目录下,可见不报错都难.
+
 * 语法错误
 `特别注意:`虽然把代码写完了,进行编译的时候老是出错,你又很难检查出错误.注意下图语法变动,正确的使用,确保你的编译通过,否则反反复复修改,还是找不到问题的关键.
 
@@ -653,10 +670,13 @@ ls
 3.再次执行脚本
 ```
 
-# 联系我
+
+
+#### 联系我
 附上我的简书地址:http://www.jianshu.com/p/6e7e494b7c85
 有什么问题可以到简书联系我?
 咱们互相交流一下.
+如果需要转载,请注明原著地址哦,非常感谢!!
 
 
 
