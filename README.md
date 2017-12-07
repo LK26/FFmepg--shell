@@ -634,9 +634,13 @@ chmod +x 脚本名
 chmod 777 脚本名
 ```
 * 把我的源码下载后,编译时出错了
+
 ![编译报错.png](http://upload-images.jianshu.io/upload_images/2960658-f4f34b46d1c5209a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 * 没有这样的文件和路径
+
 ![此时文件夹内容.png](http://upload-images.jianshu.io/upload_images/2960658-209437824d1ef6fa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 *  你没有把下载的MMpage压缩包放在该目录下,可见不报错都难.
 
 * 语法错误
