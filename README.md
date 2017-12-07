@@ -620,9 +620,13 @@ done
 ![运行结果_3.png](http://upload-images.jianshu.io/upload_images/2960658-cbba6cd6851afc78.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)![运行结果_4.png](http://upload-images.jianshu.io/upload_images/2960658-ff3311daa95b0696.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 #### 7.编译过程中遇到的问题
+
 * 执行文件报警告
+
 ![执行shell提示.png](http://upload-images.jianshu.io/upload_images/2960658-089160230e43f2b8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 这里需要您给脚本授权
+
 ```
 一.
 chmod +x 脚本名
